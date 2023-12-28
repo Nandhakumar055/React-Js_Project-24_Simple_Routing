@@ -1,0 +1,58 @@
+/* Write your CSS code here */
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.logo {
+  width: 23px;
+  margin: 5px;
+}
+.logo-tittle {
+  font-size: 15px;
+  color: purple;
+  text-decoration: none;
+}
+
+.nav-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-item {
+  font-size: 15px;
+  list-style: none;
+  padding: 7px;
+  font-weight: 500;
+}
+.nav-item-text-content {
+  text-decoration: none;
+  color: purple;
+}
+
+@media Screen and (min-width: 576px) {
+  .logo {
+    width: 28px;
+  }
+  .logo-tittle {
+    font-size: 18px;
+  }
+  .nav-item {
+    font-size: 18px;
+    padding: 10px;
+  }
+}

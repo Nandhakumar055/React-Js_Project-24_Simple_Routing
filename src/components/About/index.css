@@ -1,0 +1,14 @@
+/* Write your CSS code here */
+.page-image {
+  height: 100px;
+}
+
+.page-name {
+  font-size: 30px;
+  color: purple;
+}
+.about-text {
+  padding: 10px 20px;
+  color: gray;
+  text-align: center;
+}
