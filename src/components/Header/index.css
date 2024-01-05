@@ -1,4 +1,8 @@
-/* Write your CSS code here */
+.navbar-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .nav-bar-container {
   display: flex;
@@ -7,22 +11,14 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 20px;
+  width: 100%;
 }
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.logo {
-  width: 23px;
-  margin: 5px;
-}
-.logo-tittle {
+
+.app-name {
   font-size: 15px;
   color: purple;
-  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Roboto';
 }
 
 .nav-item-container {
@@ -38,21 +34,15 @@
   list-style: none;
   padding: 7px;
   font-weight: 500;
+  font-family: 'Roboto';
 }
-.nav-item-text-content {
+.hyper-link {
+  color: black;
   text-decoration: none;
-  color: purple;
 }
 
 @media Screen and (min-width: 576px) {
-  .logo {
-    width: 28px;
-  }
-  .logo-tittle {
-    font-size: 18px;
-  }
-  .nav-item {
-    font-size: 18px;
-    padding: 10px;
+  .nav-bar-container {
+    width: 85%;
   }
 }

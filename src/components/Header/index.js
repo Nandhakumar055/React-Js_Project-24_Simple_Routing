@@ -1,42 +1,28 @@
-// Write your JS code here
-import {Component} from 'react'
-import {Link} from 'react-router-dom'
 import './index.css'
 
-class Header extends Component {
-  render() {
-    return (
-      <nav className="nav-bar-container">
-        <Link to="/" className="nav-item-text-content">
-          <div className="logo-container">
-            <img
-              className="logo"
-              src="https://assets.ccbp.in/frontend/react-js/wave-logo-img.png"
-              alt="wave"
-            />
-            <h1 className="logo-tittle">Wave</h1>
-          </div>
-        </Link>
-        <ul className="nav-item-container">
-          <li className="nav-item">
-            <Link className="nav-item-text-content" to="/">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-item-text-content" to="/about">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-item-text-content" to="/contact">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    )
-  }
-}
+const Header = () => (
+  <div className="navbar-main-container">
+    <nav className="nav-bar-container">
+      <h1 className="app-name">Madelyn Troff</h1>
+      <ul className="nav-item-container">
+        <li className="nav-item">
+          <a href="#aboutSection" className="hyper-link">
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#projectSection" className="hyper-link">
+            Project
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#contactSection" className="hyper-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+)
 
 export default Header
