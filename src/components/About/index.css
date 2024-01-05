@@ -73,6 +73,7 @@
 .banner-image {
   width: 100%;
   padding: 10px;
+  max-width: 400px;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,22 +82,24 @@
     flex-direction: row;
     justify-content: space-between;
     width: 85%;
+    max-width: 1300px;
+    margin: 0;
   }
   .user-details-container {
     width: 50%;
     max-width: 400px;
+    padding: 0px;
   }
 
   .banner-image-container {
     width: 50%;
-    max-width: 400px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .greeting-text {
-    font-size: 40px;
-    font-family: 'roboto';
+    font-size: 35px;
+    font-family: serif;
   }
   .description {
     font-size: 18px;

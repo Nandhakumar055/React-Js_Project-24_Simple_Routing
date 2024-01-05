@@ -55,6 +55,7 @@ class Home extends Component {
     isErrorName: false,
     isErrorLink: false,
     isErrorDescription: false,
+    interChangeStyle: false,
   }
 
   onChangeProjectName = event => {
@@ -81,7 +82,12 @@ class Home extends Component {
       return getImageUrl
     }
 
-    const {projectName, projectLink, projectDescription} = this.state
+    const {
+      projectName,
+      projectLink,
+      projectDescription,
+      interChangeStyle,
+    } = this.state
 
     if (projectName !== '' && projectLink !== '' && projectDescription !== '') {
       const newProjectItem = {
@@ -90,12 +96,14 @@ class Home extends Component {
         projectLink,
         projectDescription,
         projectThumbnailUrl: randomThumbnailImage(),
+        interChangeStyle: !interChangeStyle,
       }
       this.setState(prevState => ({
         projectItemList: [...prevState.projectItemList, newProjectItem],
         projectName: '',
         projectLink: '',
         projectDescription: '',
+        interChangeStyle: !prevState.interChangeStyle,
       }))
     }
 

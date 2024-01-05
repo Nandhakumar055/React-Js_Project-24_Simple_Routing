@@ -7,12 +7,19 @@ const Project = props => {
     projectLink,
     projectDescription,
     projectThumbnailUrl,
+    interChangeStyle,
   } = projectDetails
 
-  console.log(projectThumbnailUrl)
+  const projectCardStyle = interChangeStyle
+    ? 'project-card-item-1'
+    : 'project-card-item-2'
+
+  const projectThumbnailStyle = interChangeStyle
+    ? 'project-thumbnail-1'
+    : 'project-thumbnail-2'
 
   return (
-    <li className="project-card-item">
+    <li className={projectCardStyle}>
       <div className="project-details-container">
         <h1 className="project-name">{projectName}</h1>
         <p className="project-description">{projectDescription}</p>
@@ -24,7 +31,7 @@ const Project = props => {
       </div>
       <img
         src={projectThumbnailUrl}
-        className="project-thumbnail"
+        className={projectThumbnailStyle}
         alt="projectThumbnail"
       />
     </li>

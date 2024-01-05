@@ -44,5 +44,6 @@
 @media Screen and (min-width: 576px) {
   .nav-bar-container {
     width: 85%;
+    max-width: 1300px;
   }
 }
